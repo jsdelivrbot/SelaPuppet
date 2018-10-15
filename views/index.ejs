@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Date</th>
+            <th scope="col">Day</th>
+            <th scope="col">From</th>
+            <th scope="col">Till</th>
+            <th scope="col">Extra</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% lessons.forEach(function(lesson) { %>
+            <tr>
+                <td><%= lesson.name %></td>
+                <td><%= lesson.date %></td>
+                <td><%= lesson.day %></td>
+                <td><%= lesson.from %></td>
+                <td><%= lesson.till %></td>
+                <td><%= lesson.extra %></td>
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
+</body>
+</html>
